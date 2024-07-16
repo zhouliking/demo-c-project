@@ -1,12 +1,10 @@
-
-// #include <librdkafka/rdkafkacpp.h>  // 包含C++封装头文件（如果需要）
-#include <librdkafka/rdkafka.h>     // 包含C API头文件
+#include <rdkafka.h>
 #include <iostream>
 #include <cstring>
 #include <cerrno>
   
 int main() {
-    const char *brokers = "10.13.1.11:7091"; // Kafka broker地址
+    const char *brokers = "xx.xx.xx.xx:7091"; // Kafka broker地址
     const char *topic_name = "kafka_msg_topic_test";
     const char *payload = "Hello, Kafka from librdkafka!";
     size_t len = strlen(payload);

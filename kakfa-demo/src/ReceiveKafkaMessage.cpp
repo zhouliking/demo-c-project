@@ -11,8 +11,8 @@ void error_cb(rd_kafka_t *rk, int err, const char *reason, void *opaque) {
   
 int main() {
     std::cerr << "start " << std::endl;
-    const char *brokers = "10.13.1.11:7091"; // Kafka broker地址
-    const char *group_id = "dashi_kafka_msg_yefeilang_group_test"; // 消费者组ID
+    const char *brokers = "xx.xx.xx.xx:7091"; // Kafka broker地址
+    const char *group_id = "kafka_msg_topic_test"; // 消费者组ID
     const char *topic_name = "kafka_msg_topic_test"; // Kafka topic名称
     
     // 创建配置对象
